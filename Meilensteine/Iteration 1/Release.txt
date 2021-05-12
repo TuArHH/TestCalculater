@@ -1,0 +1,6 @@
+Tag: Interation_1_Fertig
+ART: Internes Entwicklungsrelease
+Status: Informall getestet - kann an Tester verteilt werden.
+Funktion: 
+	* Adieeren von Gleitkommazahlen
+	* Schnelles Starten (einfach die EXE-Datei ausführen)
