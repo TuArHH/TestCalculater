@@ -14,19 +14,34 @@ namespace Taschenrechner_Iteration_1
             /**
              *  Als Benutzer möchte ich zwei Zahlen eingeben, um deren Summe berechnen lassen
              **/
-            Console.Write("Bitte geben den ersten Summanden ein:");
-            //int num1=int.Parse(Console.ReadLine());
-            double doubnum1= double.Parse(Console.ReadLine());
 
-            Console.Write("Bitte geben den zweiten Summanden ein:");
-            //int num2= int.Parse(Console.ReadLine());
-            double doubnum2= double.Parse(Console.ReadLine());
-            //int result=Addieren(num1, num2);
-
-            double resultdouble= AddierenDouble(doubnum1,doubnum2);
             
-            //Console.WriteLine("Das Ergebnis lautet \t:{0} ", result);
-            Console.WriteLine("Das Ergebnis lautet \t:{0} ", resultdouble);
+           
+            
+            try
+            {
+                Console.Write("Bitte geben den ersten Summanden ein:");
+                double doubnum1 = double.Parse(Console.ReadLine());
+                Console.Write("Bitte geben den zweiten Summanden ein:");
+                double doubnum2 = double.Parse(Console.ReadLine());
+
+                
+                double resultdouble = AddierenDouble(doubnum1, doubnum2);
+                Console.WriteLine("Das Ergebnis lautet \t:{0} ", resultdouble);
+               
+                
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Bitte geben Sie eine Zahl ein ");
+
+            }
+           
+            
+
+            
+            
+            
 
          
             Console.ReadKey();
