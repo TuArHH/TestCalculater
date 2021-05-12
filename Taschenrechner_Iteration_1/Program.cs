@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Taschenrechner_Iteration_1
+namespace Taschenrechner
 {
 
     class Program
@@ -12,12 +12,9 @@ namespace Taschenrechner_Iteration_1
         static void Main(string[] args)
         {
             /**
-             *  Als Benutzer möchte ich zwei Zahlen eingeben, um deren Summe berechnen lassen
+             *  Als Benutzer möchte ich zwei Zahlen eingeben [Ganzahlen & Gleitkommazahlen], um deren Summe berechnen zu lassen
              **/
-
-            
-           
-            
+             
             try
             {
                 Console.Write("Bitte geben den ersten Summanden ein:");
