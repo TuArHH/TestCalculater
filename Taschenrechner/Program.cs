@@ -20,7 +20,7 @@ namespace Taschenrechner
                 Console.Write("Bitte geben den zweiten Summanden ein:");
                 string summand2 = Console.ReadLine();
 
-                string operation = Operation("Bitte gib die auszuführende Operation ein (+ ,-,/ order *) : "); 
+                string operation = Operation("Bitte gib die auszuführende Operation ein (+ , - , / oder *) : "); 
                 
                 
 
@@ -63,11 +63,7 @@ namespace Taschenrechner
                     Console.WriteLine("Diese Operation  existiert in diesem Kontext nicht");
                 }
 
-                //Ausgabe
-                //Console.WriteLine("Das Ergebnis ist \t:{0} ", Addieren(dnum1, dnum2) + Environment.NewLine +
-                //"Bitte drücken sie die EnterTaste um das Programm zu beenden");
-                //Console.WriteLine("Das Ergebnis ist \t:{0} ", Subtract(dnum1, dnum2) + Environment.NewLine +
-                //"Bitte drücken sie die EnterTaste um das Programm zu beenden");
+               
                 Console.ReadKey();
 
            
