@@ -14,10 +14,10 @@ namespace Taschenrechner
              *  Als Benutzer möchte ich zwei Zahlen eingeben [Ganzahlen & Gleitkommazahlen], um deren Summe berechnen zu lassen
              **/
                 
-                Console.Write("Bitte geben den ersten Summanden ein:");
+                Console.Write("Bitte gebe die erste Zahl ein:");
                 string summand1 = Console.ReadLine();
 
-                Console.Write("Bitte geben den zweiten Summanden ein:");
+                Console.Write("Bitte gebee doe zweite Zahl ein:");
                 string summand2 = Console.ReadLine();
 
                 string operation = Operation("Bitte gib die auszuführende Operation ein (+ , - , / oder *) : "); 
@@ -38,29 +38,29 @@ namespace Taschenrechner
                 {
                     result= Addieren(dnum1, dnum2);
                     Console.WriteLine("Das Ergebnis ist \t:{0} ",result +Environment.NewLine +
-                    "Bitte drücken sie die EnterTaste um das Programm zu beenden");
+                    "Bitte drücke die EnterTaste um das Programm zu beenden");
                 }
                 else if(operation== "-")
                 {
                     result= Subtract(dnum1, dnum2);
                     Console.WriteLine("Das Ergebnis ist \t:{0} ", result + Environment.NewLine +
-                    "Bitte drücken sie die EnterTaste um das Programm zu beenden");
+                    "Bitte drücke die EnterTaste um das Programm zu beenden");
                 }
                 else if(operation=="/")
                 {
                     result = Divided(dnum1, dnum2);
                     Console.WriteLine("Das Ergebnis ist \t:{0} ", result + Environment.NewLine +
-                    "Bitte drücken sie die EnterTaste um das Programm zu beenden");
+                    "Bitte drücke die EnterTaste um das Programm zu beenden");
                 }
                 else if(operation=="*")
                 {
                     result = Muliplication(dnum1, dnum2);
                     Console.WriteLine("Das Ergebnis ist \t:{0} ", result + Environment.NewLine +
-                    "Bitte drücken sie die EnterTaste um das Programm zu beenden");
+                    "Bitte drücke die EnterTaste um das Programm zu beenden");
             }
                 else
                 {
-                    Console.WriteLine("Diese Operation  existiert in diesem Kontext nicht");
+                    Console.WriteLine("Diese Operation existiert in diesem Kontext nicht");
                 }
 
                
