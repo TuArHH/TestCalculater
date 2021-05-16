@@ -62,7 +62,7 @@ namespace Taschenrechner
             Console.Write("Bitte gebe die erste Zahl ein:");
             string summand1 = Console.ReadLine();
 
-            Console.Write("Bitte gebee doe zweite Zahl ein:");
+            Console.Write("Bitte gebe die zweite Zahl ein:");
             string summand2 = Console.ReadLine();
 
             string operation = Operation("Bitte gib die auszuführende Operation ein (+ , - , / oder *) : ");
