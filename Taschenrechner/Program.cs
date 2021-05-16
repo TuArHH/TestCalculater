@@ -10,24 +10,64 @@ namespace Taschenrechner
 
         static void Main(string[] args)
         {
-                /**
-                 *  Als Benutzer möchte ich zwei Zahlen eingeben [Ganzahlen & Gleitkommazahlen], um deren Summe berechnen zu lassen
-                 **/
-             
+            /**
+             *  Als Benutzer möchte ich zwei Zahlen eingeben [Ganzahlen & Gleitkommazahlen], um deren Summe berechnen zu lassen
+             **/
+                
                 Console.Write("Bitte geben den ersten Summanden ein:");
                 string summand1 = Console.ReadLine();
 
                 Console.Write("Bitte geben den zweiten Summanden ein:");
                 string summand2 = Console.ReadLine();
 
-                // Wandeln in einen Ganzzahle
+                string operation = Operation("Bitte gib die auszuführende Operation ein (+ ,-,/ order *) : "); 
+                
+                
+
+                /** Wandeln in einen Ganzzahle
                 int num1 = Convert.ToInt32(summand1);
                 int num2 = Convert.ToInt32(summand2);
+                **/
+
+                //Wandeln in einen Gleitkommazahl
+                double dnum1 = Convert.ToDouble(summand1);
+                double dnum2 = Convert.ToDouble(summand2);
+                double result = 0;
+                // Berechnung verschiedener Operationen
+                if (operation== "+")
+                {
+                    result= Addieren(dnum1, dnum2);
+                    Console.WriteLine("Das Ergebnis ist \t:{0} ",result +Environment.NewLine +
+                    "Bitte drücken sie die EnterTaste um das Programm zu beenden");
+                }
+                else if(operation== "-")
+                {
+                    result= Subtract(dnum1, dnum2);
+                    Console.WriteLine("Das Ergebnis ist \t:{0} ", result + Environment.NewLine +
+                    "Bitte drücken sie die EnterTaste um das Programm zu beenden");
+                }
+                else if(operation=="/")
+                {
+                    result = Divided(dnum1, dnum2);
+                    Console.WriteLine("Das Ergebnis ist \t:{0} ", result + Environment.NewLine +
+                    "Bitte drücken sie die EnterTaste um das Programm zu beenden");
+                }
+                else if(operation=="*")
+                {
+                    result = Muliplication(dnum1, dnum2);
+                    Console.WriteLine("Das Ergebnis ist \t:{0} ", result + Environment.NewLine +
+                    "Bitte drücken sie die EnterTaste um das Programm zu beenden");
+            }
+                else
+                {
+                    Console.WriteLine("Diese Operation  existiert in diesem Kontext nicht");
+                }
 
                 //Ausgabe
-                Console.WriteLine("Das Ergebnis ist \t:{0} ", Addieren(num1, num2) + Environment.NewLine + 
-                "Bitte drücken sie die EnterTaste um das Programm zu beenden");
-
+                //Console.WriteLine("Das Ergebnis ist \t:{0} ", Addieren(dnum1, dnum2) + Environment.NewLine +
+                //"Bitte drücken sie die EnterTaste um das Programm zu beenden");
+                //Console.WriteLine("Das Ergebnis ist \t:{0} ", Subtract(dnum1, dnum2) + Environment.NewLine +
+                //"Bitte drücken sie die EnterTaste um das Programm zu beenden");
                 Console.ReadKey();
 
            
@@ -41,6 +81,7 @@ namespace Taschenrechner
                 
                 double result;
                 return result = num1 + num2;
+
            
         }
 
@@ -50,6 +91,25 @@ namespace Taschenrechner
             double result;
             return result = num1 - num2;
 
+        }
+
+        public static double Divided(double num1,double num2)
+        {
+            double result;
+            return result = num1 / num2;
+        }
+        
+        public static double Muliplication(double num1,double num2)
+        {
+            double result;
+            return result = num1 * num2;
+        }
+
+        public static string Operation(string op)
+        {
+            Console.Write(op);
+            string summand = Console.ReadLine();
+            return summand;
         }
 
 
