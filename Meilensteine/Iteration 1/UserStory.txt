@@ -1,0 +1,40 @@
+Status:
+ * Implementiert
+ * Getestet
+ * Erledigt
+
+Titel: Subtrahieren
+Story: Als Benutzer möchte ich zwei Zahlen eingeben, um deren Differenz berechen zu lassen
+Akzeptanzkriterien: 
+ * Nur gültige Gleitkommazahlen zwischen -10.0 und 100.0 können subtrahiert werden 
+ * Nicht zulässig sind Eingaben von Zeichenkette
+	
+Status:
+ * Implementiert
+ * Getestet 
+ * Erledigt 
+Titel: Addieren
+Story: Als Benutzer möchte ich zwei Zahlen eingeben, um deren Summe berechnen zu lassen
+Akzetanzkriterien:
+ * Gleitkommazahlen zwischen -10.0 und 100.0 können subtrahiert werden
+* Nicht zulässig sind Eingaben von Zeichenkette
+
+Status:
+ * Implementiert
+ * Getestet
+ * Erledigt
+
+Titel: Multiplikation
+Story: Als Benutzer möchte ich zwei Zahlen eingeben, um deren Produkt berechen zu lassen
+Akzeptanzkriterien: 
+ * Gleitkommazahlen zwischen -10.0 und 100.0 können subtrahiert werden
+
+Status:
+ * Implementiert
+ * Getestet
+ * Erledigt
+
+Titel: Division
+Story: Als Benutzer möchte ich zwei Zahlen eingeben, um deren Division berechen zu lassen
+Akzeptanzkriterien: 
+ * Gleitkommazahlen zwischen -10.0 und 100.0 können subtrahiert werden
