@@ -81,7 +81,7 @@ namespace Taschenrechner
                 Console.WriteLine("Das Ergebnis ist \t:{0} ", Resultat + Environment.NewLine +
                 "Bitte drücke die EnterTaste um das Programm zu beenden");
             }
-            else if (operation == "/")
+            else if (operation == "/" || operation == ":" )
             {
                 Resultat = Divided(dnum1, dnum2);
                 Console.WriteLine("Das Ergebnis ist \t:{0} ", Resultat + Environment.NewLine +
